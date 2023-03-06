@@ -1,4 +1,5 @@
 # CryptoFin's Solidity Auditing Checklist
+
 In the last year, hundreds of millions of dollars worth of crypto have been lost by faulty smart contracts.
 
 Beyond devastating those who lose funds, these blunders harm the ecosystem as a whole by signaling the immaturity of smart contracts and reinforcing people’s wariness. Better due diligence processes could’ve prevented many of the issues found, saving a ton of headaches, money, and stifled progress.
@@ -8,7 +9,9 @@ At CryptoFin, we’ve audited many production-ready Solidity contracts. We’ve 
 We hope this checklist is useful to the community and will raise the bar for contract quality!
 
 ## Checklist
+
 ### Core Checks
+
 These are basic checks to undertake with any contract. Our checklist reflects Solidity v0.4.24.
 
 - [ ] Prevent overflow and underflow
@@ -45,6 +48,7 @@ These are basic checks to undertake with any contract. Our checklist reflects So
 - [ ] Verify changes in the most recent Solidity version (if upgrading from an older version)
 
 ### Testing and Software Engineering
+
 - [ ] Test Coverage
   - [ ] Have 100% branch test coverage
 - [ ] Unit Tests
@@ -55,6 +59,7 @@ These are basic checks to undertake with any contract. Our checklist reflects So
   - [ ] Don't deploy recently written code, especially when written under a tight deadline
 
 ### Resilience
+
 We always check for code that will mitigate risk when (not if) a contract fails. When a contract doesn’t have this, it’s often a warning sign.
 
 - [ ] What failure states would be most disastrous?
@@ -65,6 +70,7 @@ We always check for code that will mitigate risk when (not if) a contract fails.
   - [ ] Does the contract have a circuit breaker? (preventing critical functions in an emergency mode)
 
 ### Auditing
+
 Auditing helps catch many bugs, but shouldn’t also be seen as a magic bullet. Your system still needs to handle failure gracefully.
 
 - [ ] Audits
@@ -73,6 +79,7 @@ Auditing helps catch many bugs, but shouldn’t also be seen as a magic bullet. 
   - [ ] Allocate comfortable time after the audit to address issues
 
 ### High Risk Areas
+
 When performing an audit, CryptoFin pays special attention to the these areas which require greater scrutiny, as they often add bugs.
 
 - external and public functions
@@ -84,9 +91,14 @@ When performing an audit, CryptoFin pays special attention to the these areas wh
 - Code written most recently
 
 ### Security Resources
+
 - [Ethereum Security Guide](https://github.com/ethereum/wiki/wiki/Safety)
 - [Consensys Ethereum Smart Contract Security Best Practices](https://consensys.github.io/smart-contract-best-practices/)
 - [Decentralized Application Security Project](https://dasp.co/)
+- [Web3Security DAO Wiki](https://www.web3securitydao.xyz/)
+- [SWC Registry](https://swcregistry.io/)
+- [The Auditor Book](https://github.com/aviggiano/theauditorbook/releases/tag/latest)
 
 ### Where to go from here
+
 Many of these checklist items are well-suited for a linter. We welcome any contributors who want to take a crack at it.
