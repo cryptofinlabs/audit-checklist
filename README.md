@@ -84,7 +84,7 @@ When performing an audit, CryptoFin pays special attention to the these areas wh
 - Code written most recently
 
 ### Security Resources
-- [Ethereum Security Guide](https://github.com/ethereum/wiki/wiki/Safety)
+- [Ethereum Security Guide](https://ethereum.org/en/security/)
 - [Consensys Ethereum Smart Contract Security Best Practices](https://consensys.github.io/smart-contract-best-practices/)
 - [Decentralized Application Security Project](https://dasp.co/)
 
